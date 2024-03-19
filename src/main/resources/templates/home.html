@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:insert="head">
+    <meta charset="UTF-8">
+    <title th:text="${title}"></title>
+</head>
+<body>
+<div th:insert="nav"></div>
+<div class="form-control container">
+    <form action="/log-out" method="post">
+        <button class="btn btn-primary">Выход</button>
+    </form>
+
+    <a href="/admin">Страница Админа</a>
+</div>
+<div th:insert="footer"></div>
+</body>
+</html>

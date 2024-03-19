@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:insert="head">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:insert="nav"></div>
+<div class="container">
+    <form action="/auth" method="post">
+        <h2>Авторизация</h2>
+        <div>
+            <label>Логин</label>
+            <input class="form-control w-25 mb-2" type="text" name="email" placeholder="Email">
+        </div>
+        <div>
+            <label>Пароль</label>
+            <input class="form-control w-25 mb-2" type="password" name="password" placeholder="Пароль">
+        </div>
+        <button class="btn btn-primary btn-block">Войти</button>
+    </form>
+</div>
+
+
+<div th:insert="footer"></div>
+    </body>
+</html>

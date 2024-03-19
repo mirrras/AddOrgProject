@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:insert="head">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:insert="nav"></div>
+    <input type="text" name = "title" placeholder="Add name of article" class="form-control"><br>
+    <input type="text" name = "anons" placeholder="Add anons of article" class="form-control"><br>
+    <textarea name = "full_text" placeholder="Add full text" class="form-control"></textarea><br>
+    <button type="submit" class="btn btn-success">Publish</button>
+<div th:insert="footer"></div>
+</body>
+</html>
